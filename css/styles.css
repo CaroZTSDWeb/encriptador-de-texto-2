@@ -1,0 +1,124 @@
+:root{
+    --color-primario-bg: #F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terceario:  #495057; 
+    --color-bg-message: white;
+    --color-btn-encriptar:white;
+    --color-bg-desencriptar:#D8DFE8;
+    --color-footer: #D8DFE8;
+    --color-bg-footer: #4873a8;
+
+}
+
+*{
+    background: var(--color-primario-bg); 
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    overflow-y:hidden;
+}
+
+body{
+    margin:0px;
+}
+.logo-alura{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+main{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 140px;
+    margin-right: 130px;
+   
+}
+.text-area {
+    height: 400px;
+    padding: 2px;
+    border:none;
+    color: var(--color-secundario); 
+    margin-top: 30px; 
+    text-transform: lowercase;
+}
+::placeholder { color: var(--color-secundario); }
+  .text-area:focus {
+        outline: none;
+    }
+
+.info{
+    color: var(--color-terceario);
+    font-size: 18px;
+    margin:0;
+}
+
+.img-aviso{
+    margin-right: 6px;
+}
+.message{
+    background-color: var(--color-bg-message);
+    background-image: url("/img/detective.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: var(--color-secundario);
+    margin-left: 68px;
+    margin-top: 15px;
+    padding-left: 20px;
+    position: fixed;
+}    
+.message:focus {
+    outline: none;
+}
+.buttons{
+    display: flex;
+    margin-top: 10px;
+}
+
+.btn-encriptar:hover,
+.btn-desencriptar:hover,
+.copiar:hover{
+    transform: scale(0.97);
+}
+
+
+.btn-encriptar{
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+    border-radius: 24px;
+    color: var(--color-btn-encriptar);
+    cursor: pointer;
+    height: 64px;
+    width: 320px;
+}
+.btn-desencriptar{
+    background-color: var(--color-bg-desencriptar);
+    border: 1px solid var(--color-secundario);
+    border-radius: 24px;
+    color: var(--color-secundario);
+    cursor: pointer;
+    margin-left: 20px; 
+    height: 64px; 
+    width: 320px; 
+}
+.copiar{
+    border: 1px solid var(--color-secundario);
+    border-radius: 24px;
+    color: var(--color-secundario);
+    cursor: pointer;
+    height: 54px;
+    width: 260px; 
+    margin-left: 86px; 
+    margin-top: 480px; 
+    position: absolute;
+}
+.footer{
+    color: var(--color-bg-desencriptar) ;
+    font-size: 12px;
+    margin: 0px;
+    text-align: center;
+    padding: 6px 0px;
+    background-color: var(--color-bg-footer);
+}
+

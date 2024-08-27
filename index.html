@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="img/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+
+<body onload="limpiarCampos()">
+    <div class="container">
+        <header>
+        <div class="logoAlura">
+          <img class="logo-alura"  src="img/logo.png" alt="logo de Alura"/>
+        </div>
+        </header>
+
+      <main>
+         <section>
+            <div class="ingrese-texto1">
+                <textarea class="text-area" cols="30" rows="10" id="txt-area" placeholder="Ingrese el texto aqui."></textarea>
+            </div>
+            <div>
+                <h6 class="info"><img src="/img/aviso.svg" alt="imagen aviso" class="img-aviso"/>Solo minúsculas y sin acentos.</h6>
+            </div>  
+            <div class="buttons">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()" >Desencriptar</button>
+            </div>
+         </section>
+
+         <section>
+            <div class="ingrese-texto2">
+            <!--  <img src="img/detective.png" id="img_detective" alt="Es un niño con una lupa"/>
+            <h1 id="tittle_detective">Ningún mensaje fue encontrado</h1> -->
+
+            <textarea class="message" cols="12" rows="11" id="mensaje">Ingresa el texto que deseas encriptar o desencriptar//NO USA EL TITULO.</textarea>
+            <button class="copiar"  id="btn_copiar" type="button" name="button" onclick="copiar()">Copiar</button>
+            </div>
+         </section>
+      
+        </main>
+
+        <footer>
+            <p class="footer">&copy; 2024 -  Desarrollado por caroZDev - Challenge Programa One - Alura Latam.</p>
+        </footer>
+
+    </div>
+
+    <script src="/encriptador.js"></script>
+    </body>
+
+</html>
