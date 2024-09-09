@@ -16,13 +16,16 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    overflow-y:hidden;
+    /*overflow-y:hidden;*/
 }
 
 body{
+    width: 1450px;
+    height: 1059px;
     margin:0px;
 }
 .logo-alura{
+    display: flex;
     padding-top: 10px;
     margin-left: 10px;
     width: 10%;
